@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -71,6 +74,11 @@ nav a:hover {
 /* =========================
    HERO
 ========================= */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
 
 .hero {
   min-height: 75vh;
@@ -542,15 +550,15 @@ footer {
 /* Success message */
 
 .form-message {
-  display: none;
-  padding: 16px;
-  border-radius: 9px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.5s ease;
+    margin-top: 15px;
 }
 
 .form-message.show {
-  display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 @media (max-width: 800px) {

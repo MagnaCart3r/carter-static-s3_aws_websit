@@ -6,10 +6,13 @@
   <title>Carter | Digital Solutions</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <header class="navbar">
     <div class="container nav-content">
       <a class="logo" href="#home">CARTER<span>.</span></a>
+
       <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -19,90 +22,283 @@
     </div>
   </header>
 
+
   <main>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
     <section id="home" class="hero">
+
       <div class="container hero-content">
+
         <p class="eyebrow">DIGITAL SOLUTIONS</p>
-        <h1>Build something <span>remarkable.</span></h1>
+
+        <h1>
+          Build something <span>remarkable.</span>
+        </h1>
+
         <p class="hero-text">
           Carter helps businesses create clean, reliable and modern digital
           experiences that turn ideas into results.
         </p>
-        <a class="button" href="#services">Explore our services</a>
+
+        <div class="hero-buttons">
+          <a class="button" href="#services">
+            Explore our services
+          </a>
+
+          <a class="button" href="#contact">
+            Contact Carter →
+          </a>
+        </div>
+
       </div>
+
     </section>
 
+
+    <!-- =========================
+         ABOUT SECTION
+    ========================== -->
+
     <section id="about" class="section">
-      <button id="welcomeButton">Click Me</button>
-<p id="welcomeMessage"></p>
+
       <div class="container two-column">
+
         <div>
+
           <p class="eyebrow">ABOUT MAGNA CARTER</p>
-          <h2>Simple technology. <span>Real life impact.</span></h2>
+
+          <h2>
+            Simple technology.
+            <span>Real life impact.</span>
+          </h2>
+
         </div>
+
+
         <div>
+
           <p>
             Carter's focus on practical digital solutions that are easy to use,
-            maintain and grow. From web experiences to cloud projects, Carter's 
+            maintain and grow. From web experiences to cloud projects, Carter's
             approach is straightforward: understand the goal, build carefully,
             and deliver value.
           </p>
+
           <p>
             This website is hosted as a static website on Amazon S3, giving us
             a simple and highly scalable foundation.
           </p>
 
+
           <div class="contact-info">
-        <p><strong>📍 Location:</strong> Lagos, Nigeria</p>
-        <p><strong>📞 Contact:</strong> <a href="tel:08061758637">08061758637</a></p>
-        <p><strong>✉️ Email:</strong> <a href="mailto:Imolecarter@gmail.com">Imolecarter@gmail.com</a></p>
-         </div>
+
+            <p>
+              <strong>📍 Location:</strong>
+              Lagos, Nigeria
+            </p>
+
+            <p>
+              <strong>📞 Contact:</strong>
+              <a href="tel:08061758637">08061758637</a>
+            </p>
+
+            <p>
+              <strong>✉️ Email:</strong>
+              <a href="mailto:Imolecarter@gmail.com">
+                Imolecarter@gmail.com
+              </a>
+            </p>
+
+          </div>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- =========================
+         SERVICES SECTION
+    ========================== -->
 
     <section id="services" class="section services">
+
       <div class="container">
+
         <p class="eyebrow">WHAT WE DO</p>
+
         <h2>Our services</h2>
+
+
         <div class="cards">
+
           <article class="card">
+
             <div class="icon">01</div>
+
             <h3>Web Design</h3>
-            <p>Modern, responsive websites designed around your audience and goals.</p>
+
+            <p>
+              Modern, responsive websites designed around your audience
+              and goals.
+            </p>
+
           </article>
+
+
           <article class="card">
+
             <div class="icon">02</div>
+
             <h3>Cloud Projects</h3>
-            <p>Practical AWS solutions for hosting, storage, deployment and learning.</p>
+
+            <p>
+              Practical AWS solutions for hosting, storage, deployment
+              and learning.
+            </p>
+
           </article>
+
+
           <article class="card">
+
             <div class="icon">03</div>
+
             <h3>Digital Strategy</h3>
-            <p>Clear technical direction that helps turn ideas into achievable projects.</p>
+
+            <p>
+              Clear technical direction that helps turn ideas into
+              achievable projects.
+            </p>
+
           </article>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
 
     <section id="contact" class="section contact">
-      <div class="container contact-box">
-        <div>
+
+      <div class="container contact-wrapper">
+
+
+        <div class="contact-description">
+
           <p class="eyebrow">GET IN TOUCH</p>
+
           <h2>Have a project in mind?</h2>
-          <p>Let's turn your next idea into something useful.</p>
+
+          <p>
+            Let's turn your next idea into something useful.
+            Send Carter a message and let's start the conversation.
+          </p>
+
         </div>
-        <a class="button light" href="mailto:hello@carter.example">Contact Carter</a>
+
+
+        <div class="contact-form-container">
+
+          <form id="contactForm">
+
+
+            <div class="form-group">
+
+              <label for="name">Name</label>
+
+              <input
+                type="text"
+                id="name"
+                placeholder="Your name"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">Email</label>
+
+              <input
+                type="email"
+                id="email"
+                placeholder="you@example.com"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="message">Message</label>
+
+              <textarea
+                id="message"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="form-submit">
+
+              <span>Send Message</span>
+
+              <span class="submit-arrow">→</span>
+
+            </button>
+
+
+            <p id="formMessage" class="form-message"></p>
+
+
+          </form>
+
+        </div>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
   <footer>
+
     <div class="container footer-content">
-      <span>© 2026 Carter. All rights reserved.</span>
-      <span>Hosted on Amazon S3</span>
+
+      <span>
+        © 2026 Carter. All rights reserved.
+      </span>
+
+      <span>
+        Hosted on Amazon
+      </span>
+
     </div>
+
   </footer>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>

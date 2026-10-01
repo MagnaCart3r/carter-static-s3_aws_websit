@@ -2,16 +2,7 @@
 
 console.log("Carter website JavaScript is working!");
 
-// ===============================
-// Welcome interaction
-// ===============================
 
-const welcomeButton = document.getElementById("welcomeButton");
-const welcomeMessage = document.getElementById("welcomeMessage");
-
-welcomeButton.addEventListener("click", function () {
-    welcomeMessage.textContent = "Welcome to the future!";
-});
 
 
 // ===============================
@@ -43,7 +34,7 @@ contactForm.addEventListener("submit", async function (event) {
 
     // Show sending status
     formMessage.textContent = "Sending your message...";
-
+    formMessage.classList.add("show");
     try {
 
         // Send form data to API Gateway
@@ -78,7 +69,13 @@ contactForm.addEventListener("submit", async function (event) {
 
         // Success message
         formMessage.textContent =
-            "Thank you, " + name + "! Your message has been received.";
+         "Thank you, " + name + "! Your message has been received.";
+
+formMessage.classList.add("show");
+
+setTimeout(() => {
+    formMessage.classList.remove("show");
+}, 5000);
 
         // Clear form
         contactForm.reset();
@@ -92,6 +89,8 @@ contactForm.addEventListener("submit", async function (event) {
 
         // Error message
         formMessage.textContent =
-            "Sorry, your message could not be sent. Please try again.";
+    "Sorry, your message could not be sent. Please try again.";
+
+formMessage.classList.add("show");
     }
 });
