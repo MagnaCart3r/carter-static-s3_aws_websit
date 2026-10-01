@@ -4,13 +4,13 @@ A personal digital-solutions website built as a hands-on AWS cloud project. The 
 
 The project is intentionally being developed in stages to practice real-world cloud architecture, deployment, version control, and backend integration.
 
-## 🚀 Live Website
+##  Live Website
 
 **CloudFront URL**
 
 https://d15dd2y8vjhvo6.cloudfront.net/
 
-## 🏗️ Current Architecture
+## Current Architecture
 
 ```text
 Visitor / Browser / Mobile
@@ -43,7 +43,7 @@ Visitor → CloudFront → S3
 Visitor → JavaScript → API Gateway → Lambda → DynamoDB
 ```
 
-## ✨ Features
+##  Features
 
 - Responsive website
 - Hero section with optimized `hero.webp`
@@ -56,7 +56,7 @@ Visitor → JavaScript → API Gateway → Lambda → DynamoDB
 - Git and GitHub version control
 - AWS CLI deployment workflow
 
-## ☁️ AWS Services Used
+##  AWS Services Used
 
 ### Amazon S3
 
@@ -140,7 +140,7 @@ DynamoDB is the project's database for contact submissions.
 
 Real contact-form submissions have been successfully stored and verified in the table.
 
-## 📬 Contact Form
+##  Contact Form
 
 The form collects:
 
@@ -162,7 +162,7 @@ Lambda
 DynamoDB
 ```
 
-## 🌐 Frontend
+##  Frontend
 
 Built with:
 
@@ -178,7 +178,7 @@ Built with:
 | `hero.webp` | Optimized hero image |
 | `README.md` | Project documentation |
 
-## 🖼️ Performance Improvement
+##  Performance Improvement
 
 The original hero image was significantly larger and was optimized to:
 
@@ -188,7 +188,7 @@ hero.webp
 
 Current size is approximately 166 KB, reducing the amount of data required for the hero section, especially on mobile connections.
 
-## 🔧 Deployment
+##  Deployment
 
 The website can be synchronized to S3 using AWS CLI:
 
@@ -204,7 +204,7 @@ aws s3 sync . s3://carter-static-website-1738 --exclude ".git/*" --dryrun
 
 The `.git` directory is excluded so repository files are not uploaded to S3.
 
-## 🌿 Git Workflow
+##  Git Workflow
 
 Repository:
 
@@ -226,7 +226,7 @@ feature/javascript-interactions
 
 The JavaScript feature branch was merged before backend development continued.
 
-## 📈 Project Evolution
+## Project Evolution
 
 ### Phase 1 — Static Website
 
@@ -266,7 +266,7 @@ The contact backend remains:
 Visitor → API Gateway → Lambda → DynamoDB
 ```
 
-## 🧪 Current Status
+##  Current Status
 
 | Component | Status |
 |---|---|
@@ -296,7 +296,7 @@ For the current learning phase, the S3 bucket has not yet been fully restricted 
 
 AWS WAF was also not enabled during the current CloudFront setup.
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 Potential future phases include:
 
@@ -311,7 +311,7 @@ Potential future phases include:
 - Authentication for protected/admin functionality
 - Custom domain if one is purchased in the future
 
-## 🎯 Project Goal
+##  Project Goal
 
 The purpose of this project is to learn how a modern cloud-hosted application is assembled step by step.
 
@@ -335,7 +335,7 @@ CloudFront + HTTPS
 
 The architecture will continue to evolve gradually as new AWS concepts are introduced and tested.
 
-## 🛠️ Technologies
+##  Technologies
 
 - HTML5
 - CSS3
