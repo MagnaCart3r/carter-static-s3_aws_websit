@@ -73,7 +73,7 @@ nav a:hover {
 ========================= */
 
 .hero {
-  min-height: 88vh;
+  min-height: 75vh;
   display: grid;
   place-items: center;
   position: relative;
@@ -302,7 +302,7 @@ footer {
   }
 
   .hero {
-    min-height: 82vh;
+    min-height: 75vh;
     background-position: center;
   }
 
